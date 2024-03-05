@@ -1,0 +1,113 @@
+section {
+  @include flexCenter();
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  .list-group-item {
+    justify-content: space-between;
+    width: 100%;
+    transition: 0.4s;
+    cursor: pointer;
+    z-index: 1;
+    .action{
+      display: flex;
+      gap: 20px;
+      .inputc{
+        cursor: pointer;
+      }
+    }
+    &:hover {
+      transform: scale(1.01);
+      background-color: black;
+      color: white;
+    }
+    
+  }
+  .search {
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+  }
+  .addtodo {
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+  }
+  .home {
+    @include flexCenter();
+    align-items: flex-start;
+    padding-top: 100px;
+    width: 100%;
+    height: 96.8vh;
+    .container {
+      @include flexCenter();
+      display: flex;
+      align-items: stretch;
+      flex-direction: column;
+      gap: 30px;
+      background-color: rgba(65, 65, 65, 0.383);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(2px);
+      z-index: 1;
+      .list-group{
+        max-height: 300px;
+        overflow-y:  scroll;
+        padding: 10px;
+        &::-webkit-scrollbar{
+          display: none
+        }
+      }
+    }
+  }
+
+  .title {
+    @include flexCenter();
+  }
+  h1 {
+    @include flexCenter();
+    display: flex;
+    color: white;
+    padding-top: 30px;
+    font-size: 90px;
+    user-select: none;
+    filter: drop-shadow(4px 4px 1px rgba(0, 0, 0, 0.445));
+    span {
+      @include flexCenter();
+      color: rgb(0, 0, 0);
+    }
+  }
+}
+
+.display-off {
+  display: none;
+}
+.display-on {
+  @include flexCenter();
+}
+
+.background-visibility {
+  background-color: rgba(115, 114, 114, 0.563);
+}
+
+.ul-remove{
+  animation: ulRemove linear forwards 2s;
+}
+
+@keyframes ulRemove {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 0;
+  }
+}

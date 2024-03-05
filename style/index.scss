@@ -1,0 +1,25 @@
+@mixin flexCenter(
+  $justify-content: center,
+  $align-items: center,
+  $direction: row
+) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $direction;
+}
+
+@import "home";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 1;
+}
+
+body{
+  display: flex;
+  background:  url(../images/fundo.jpeg) fixed;
+}

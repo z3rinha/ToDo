@@ -1,0 +1,148 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+section .list-group-item {
+  justify-content: space-between;
+  width: 100%;
+  transition: 0.4s;
+  cursor: pointer;
+  z-index: 1;
+}
+section .list-group-item .action {
+  display: flex;
+  gap: 20px;
+}
+section .list-group-item .action .inputc {
+  cursor: pointer;
+}
+section .list-group-item:hover {
+  transform: scale(1.01);
+  background-color: black;
+  color: white;
+}
+section .search {
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 1px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 100%;
+}
+section .addtodo {
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 1px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 100%;
+}
+section .home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 100px;
+  width: 100%;
+  height: 96.8vh;
+}
+section .home .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 30px;
+  background-color: rgba(65, 65, 65, 0.383);
+  padding: 30px;
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  z-index: 1;
+}
+section .home .container .list-group {
+  max-height: 300px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+section .home .container .list-group::-webkit-scrollbar {
+  display: none;
+}
+section .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+section h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  color: white;
+  padding-top: 30px;
+  font-size: 90px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  filter: drop-shadow(4px 4px 1px rgba(0, 0, 0, 0.445));
+}
+section h1 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: rgb(0, 0, 0);
+}
+
+.display-off {
+  display: none;
+}
+
+.display-on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.background-visibility {
+  background-color: rgba(115, 114, 114, 0.563);
+}
+
+.ul-remove {
+  animation: ulRemove linear forwards 2s;
+}
+
+@keyframes ulRemove {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 1;
+}
+
+body {
+  display: flex;
+  background: url(../images/fundo.jpeg) fixed;
+}/*# sourceMappingURL=index.css.map */
